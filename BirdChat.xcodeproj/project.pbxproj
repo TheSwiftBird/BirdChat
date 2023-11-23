@@ -12,6 +12,7 @@
 		664E3E3A2AE58D7900AA7E89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664E3E392AE58D7900AA7E89 /* Assets.xcassets */; };
 		664E3E3D2AE58D7900AA7E89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664E3E3C2AE58D7900AA7E89 /* Preview Assets.xcassets */; };
 		664E3E442AE58DA800AA7E89 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E3E432AE58DA800AA7E89 /* Bird.swift */; };
+		664E3E482AE59E7000AA7E89 /* BirdChatMacros in Frameworks */ = {isa = PBXBuildFile; productRef = 664E3E472AE59E7000AA7E89 /* BirdChatMacros */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		664E3E392AE58D7900AA7E89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		664E3E3C2AE58D7900AA7E89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		664E3E432AE58DA800AA7E89 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		664E3E452AE59D0000AA7E89 /* BirdChatMacros */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BirdChatMacros; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664E3E482AE59E7000AA7E89 /* BirdChatMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +41,9 @@
 			isa = PBXGroup;
 			children = (
 				664E3E342AE58D7800AA7E89 /* BirdChat */,
+				664E3E452AE59D0000AA7E89 /* BirdChatMacros */,
 				664E3E332AE58D7800AA7E89 /* Products */,
+				664E3E462AE59E7000AA7E89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +75,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		664E3E462AE59E7000AA7E89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +98,9 @@
 			dependencies = (
 			);
 			name = BirdChat;
+			packageProductDependencies = (
+				664E3E472AE59E7000AA7E89 /* BirdChatMacros */,
+			);
 			productName = BirdChat;
 			productReference = 664E3E322AE58D7800AA7E89 /* BirdChat.app */;
 			productType = "com.apple.product-type.application";
@@ -346,6 +361,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		664E3E472AE59E7000AA7E89 /* BirdChatMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BirdChatMacros;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 664E3E2A2AE58D7800AA7E89 /* Project object */;
 }

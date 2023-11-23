@@ -5,6 +5,7 @@
 //  Created by Yakov Manshin on 10/22/23.
 //
 
+import BirdChatMacros
 import SwiftUI
 
 struct ContentView: View {
@@ -13,8 +14,7 @@ struct ContentView: View {
     let otherUser: Bird
     
     var body: some View {
-        // FIXME: Encapsulate this logic inside `Bird`
-        if currentUser.id != otherUser.id {
+        if currentUser != otherUser {
             addToFriendsView
         } else {
             sameUserErrorView
@@ -40,16 +40,16 @@ struct ContentView: View {
                 Text("\(currentUser.displayName), would you like to add \(otherUser.displayName) to friends?")
                     .font(.headline)
                     .multilineTextAlignment(.center)
-                // TODO: Display `otherUser`’s `favoriteFood`
+                Text("Just so you know, their favorite food is \(otherUser.favoriteFood.displayName).")
             }
             HStack {
                 Button("Add") {
-                    // TODO: Add to friends
+                    #todo("Add to friends")
                 }
                 .buttonStyle(.borderedProminent)
                 .fontWeight(.bold)
                 Button("Cancel") {
-                    // TODO: Cancel and go back
+                    #todo("Cancel and go back")
                 }
                 .buttonStyle(.bordered)
             }
